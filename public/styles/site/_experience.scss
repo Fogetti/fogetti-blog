@@ -1,0 +1,322 @@
+.partial .partial-wrapper > .partial-content {
+  padding: 80px 0px;
+}
+
+@media (min-width: 768px) {
+  .partial .partial-wrapper > .partial-content {
+    padding: 100px 0px;
+  }
+}
+
+.partial .partial-title {
+  margin-bottom: 20px;
+  font-size: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partial .partial-subtitle {
+  color: #a1a1a1;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.partial.bg-image-yes {
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (min-width: 1280px) {
+  .partial.bg-image-yes {
+    background-attachment: fixed;
+  }
+}
+
+.partial.bg-image-yes .container-fluid.partial-wrapper {
+  position: relative;
+}
+
+.partial.bg-image-yes .container-fluid.partial-wrapper > .partial-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .partial.bg-image-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .partial.bg-image-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .partial.bg-image-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 1170px;
+  }
+}
+
+.partial.bg-image-yes .container-fluid.partial-wrapper > .partial-content:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.partial.parallax-yes > .parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.partial.parallax-yes > .parallax > .bcg {
+  display: table;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+@media (min-width: 1280px) {
+  .partial.parallax-yes > .parallax > .bcg {
+    background-attachment: fixed;
+  }
+}
+
+.partial.parallax-yes .container-fluid.partial-wrapper {
+  position: relative;
+}
+
+.partial.parallax-yes .container-fluid.partial-wrapper > .partial-content {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .partial.parallax-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .partial.parallax-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .partial.parallax-yes .container-fluid.partial-wrapper > .partial-content {
+    width: 1170px;
+  }
+}
+
+.partial.parallax-yes .container-fluid.partial-wrapper > .partial-content:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#resume {
+  background-color: #171717;
+}
+
+.panel-group.resume .resume-item .resume-item * {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 25px;
+  overflow-x: hidden;
+}
+
+#resume h3 {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  #resume h3 {
+    text-align: left;
+  }
+}
+
+#resume .education {
+  margin-top: 30px;
+}
+
+#resume .work-experience {
+  margin-top: 50px;
+}
+
+.panel-group.resume {
+  position: relative;
+  margin-top: 30px;
+}
+
+.panel-group.resume .resume-item {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 568px) {
+  .panel-group.resume .resume-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel-group.resume .resume-item-before {
+    position: absolute;
+    content: '';
+    width: 1px;
+    height: calc(100% + 30px);
+    top: 0;
+    left: 170px;
+    border-left: 1px dashed darkgray;
+  }
+}
+
+.panel-group.resume .resume-item:last-child {
+  margin-bottom: 0px;
+}
+
+.panel-group.resume .resume-item:last-child:before {
+  display: none;
+}
+
+.panel-group.resume .resume-item .resume-year {
+  display: block;
+  position: relative;
+  width: 120px;
+  height: 40px;
+  margin-bottom: -20px;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 40px;
+  background-color: #c80a48;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+@media (min-width: 568px) {
+  .panel-group.resume .resume-item .resume-year {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+  }
+}
+
+.panel-group.resume .resume-item .resume-btn {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 150px;
+  width: 40px;
+  height: 40px;
+  background-color: #2e2e2e;
+  border-radius: 4px;
+}
+
+@media (max-width: 767px) {
+  .panel-group.resume .resume-item .resume-btn {
+    display: none;
+  }
+}
+
+.panel-group.resume .resume-item .resume-btn > a {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+}
+
+.panel-group.resume .resume-item .resume-btn > a:before {
+  display: block;
+  position: absolute;
+  z-index: 15;
+  content: '-';
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 38px;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.panel-group.resume .resume-item .resume-btn > a.collapsed:before {
+  content: '+';
+}
+
+.panel-group.resume .resume-item .panel {
+  padding: 10px;
+  width: 100%;
+  background: transparent;
+  border: 1px solid darkgray;
+  border-radius: 0px;
+}
+
+@media (min-width: 568px) {
+  .panel-group.resume .resume-item .panel {
+    width: calc(100% - 140px);
+    margin-left: 140px;
+  }
+}
+
+@media (min-width: 768px) {
+  .panel-group.resume .resume-item .panel {
+    width: calc(100% - 210px);
+    margin-left: 210px;
+  }
+}
+
+.panel-group.resume .resume-item .panel .panel-heading {
+  position: relative;
+}
+
+.panel-group.resume .resume-item .panel .panel-heading .panel-title {
+  text-transform: uppercase;
+}
+
+@media (max-width: 567px) {
+  .panel-group.resume .resume-item .panel .panel-heading .panel-title {
+    padding-top: 20px;
+  }
+}
+
+.panel-group.resume .resume-item .panel .panel-collapse .panel-body {
+  padding-top: 5px;
+  border-top: none;
+  word-wrap: break-word;
+}
+
+.panel-group.resume .resume-item .panel .panel-collapse .panel-body p {
+  margin-bottom: 0px;
+}
+

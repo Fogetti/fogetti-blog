@@ -1,0 +1,106 @@
+/* Progress Tracker */
+
+.progress-tracker {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+}
+.progress-tracker.hide {
+  width: 0px;
+}
+.progress-tracker.hide ul li .pt-description,
+.progress-tracker.hide.active ul li .pt-description,
+.progress-tracker.hide.constant ul li.active .pt-description {
+  display: none;
+}
+.progress-tracker ul li {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  background-color: #ebe9ea;
+  border: 1px solid #666;
+  margin-bottom: 10px;
+  list-style-type: none;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.progress-tracker ul li a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 6px;
+}
+.progress-tracker ul li .pt-description {
+  display: none;
+  position: absolute;
+  top: -2px;
+  right: 25px;
+  padding: 3px 8px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #e9ebea;
+  white-space:nowrap;
+}
+.progress-tracker ul li.active {
+  background-color: #0070a4;
+  border-color: #0070a4;
+}
+.progress-tracker.constant ul li.active .pt-description {
+  display: block;
+}
+.slider .indicators .indicator-item.active {
+	background-color: crimson !important;
+}
+.progress-tracker {
+	z-index: 1;
+	right: 18px;
+	ul {
+		li {
+			border: none;
+			width: 12px;
+			height: 12px;
+			border-radius: 6px;
+			background-color: rgba(167, 167, 167, 0.4);
+			:hover {
+				background-color: crimson;
+				border-color: crimson;
+			}
+			.pt-description {
+				top: -10px;
+				span {
+					padding: 3px 14px;
+					-webkit-border-radius: 2px;
+					-moz-border-radius: 2px;
+					border-radius: 2px;
+					color: darkgray;
+				}
+			}
+		}
+	}
+	.active {
+		background-color: crimson !important;
+	}
+}
+
+#back-top a {
+	background: rgba(167, 167, 167, 0.4) url(../images/back-top.png) no-repeat 50% 50%;
+	bottom: 60px;
+	display: block;
+	height: 40px;
+	position: fixed;
+	right: 30px;
+	width: 40px;
+	border-radius: 20px;
+	z-index: 10;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+	-ms-transition: all 0.35s ease-in-out;
+}
+
+#back-top a:hover {
+	background: crimson url(../images/back-top.png) no-repeat 50% 50%;
+}

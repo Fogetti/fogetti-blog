@@ -1,0 +1,406 @@
+extends ../layouts/default
+
+block content
+	#preloader
+		#status
+			.status-mes
+				h4 Fogetti
+	div#ptsection-one.pt-section(data-name="Introduction").max-width.max-height
+		.col-md-offset-2.col-md-8.large_bold_white.animated.fadeInUp
+			msg Hi, my name is Gergely Nagy
+		.col-md-offset-2.col-md-8.animated.fadeInUp
+			h3 A professional software engineer from Hungary
+		icons
+			a(href="https://github.com/Fogetti/",target="_blank")
+				img(src="../../images/github.svg",width="64px",height="64px",alt="Github").animated.bounceInUp(style="animation-delay: 3s;")
+			a(href="https://www.linkedin.com/in/gergely-nagy-a4075a6",target="_blank")
+				img(src="../../images/linkedin.svg",width="64px",height="64px",alt="Linkedin").animated.bounceInUp(style="animation-delay: 3.5s;")
+			a(href="http://stackoverflow.com/users/1541896/captain-fogetti",target="_blank")
+				img(src="../../images/stackoverflow.svg",width="64px",height="64px",alt="Stackoverflow").animated.bounceInUp(style="animation-delay: 4s;")
+		div#backstretch-overlay
+
+	#ptsection-three.pt-section(data-name="Work Experience").max-width.max-height
+		<!-- RESUME SECTION START -->
+		section#resume.partial
+			.container.partial-wrapper
+				.partial-content
+					.row
+						.col-md-8.col-md-offset-2.text-center
+							h2.partial-title Experience
+
+							p.partial-subtitle The following is a summary of the projects I was working on during the years
+
+							span.divider.center
+					
+					<!-- WORK EXPERIENCE START -->
+					.row.work-experience
+						.col-md-10.col-md-offset-1
+							h3.
+								Projects
+								<br>
+								2008 - Now
+
+							#work.panel-group.resume
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2016 - Now
+									<!-- //.resume year -->
+									.resume-btn
+										a(href="#work0",data-toggle="collapse",data-parent="#work")
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Freelance Developer / Los Angeles
+
+										#work0.panel-collapse.collapse.in
+											.panel-body.text-grey.text-left
+												p.
+													Consultancy, design, analysis and development with different clients
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2016 - 2016
+
+									.resume-btn
+										a(href="#work1",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title ANA Gift Project - Ruby on Rails / SeeknetUSA - Los Angeles
+
+										#work1.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Designing and developing new models / views and controllers
+													in Ruby on Rails, based on the Spree framework. Designing, developing and testing the ANA Gift projects' role based security model.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2016 - 2016
+
+									.resume-btn
+										a(href="#work2",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title PhishStorm Project - Java Back-End / @Home
+
+										#work2.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Implementing the paper "PhishStorm: Detecting Phishing with Streaming Analytics" found in https://orbilu.uni.lu/bitstream/10993/20053/1/phishStorm-revised.pdf
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work3",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Recommendation Tool - Java Back-End / Rakuten Inc. -  Tokyo
+
+										#work3.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Analysing, designing, implementing, testing and automating the backend service which receives mall change information through a messaging system (RabbitMQ) and saves the information into Redis for easier information retrieval / caching.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work4",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Log Search Tool - Java Back-End / Rakuten Inc. -  Tokyo
+
+										#work4.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Analysing, designing, implementing, testing and automating a new data processing / aggregation pipeline (Logstash / Lucene) to support the helpdesk team responsible for the global marketplace. Making the legacy framework 100 times faster by delivering, storing and indexing through 200 GB data / day.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work5",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Log Search Tool - Java Front-End / Rakuten Inc. -  Tokyo
+
+										#work5.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Analysing, designing, implementing, testing and automating a new web application (Apache Wicket / Lucene) to support the helpdesk team during their daily operations. Integrating the webapp with the company wide authentication system, implementing authorization and developing a new search form and data list view to query the back-end. Designing and implementing new Lucene queries.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work6",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Mall Configuration Tool API - Java Back-End / Rakuten Inc. -  Tokyo
+
+										#work6.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Analysing, designing, implementing, testing and automating the configuration tool API to support product managers setting up new malls in the Rakuten Ichiba marketplace. Implementing new API methods in JSON RPC, storing the configurations in Atlassia Stash. Implementing a proprietary Atlassian Stash based authentication / authorization scheme, integrating with the Atlassian Stash OAuth 2 service.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work7",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Mall Configuration Tool Prototype  - Node.js - Express.js / Rakuten Inc. -  Tokyo
+
+										#work7.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Protoyping and evaluating the feasibility of developing a new webapplication in Node.js / Express.js and Angular.js.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2014 - 2015
+
+									.resume-btn
+										a(href="#work8",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Sitemap Tool - Java Back-End / Rakuten Inc. -  Tokyo
+
+										#work8.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Cross-border sitemap application to enhance SEO: designing, analysing, implementing, automating and testing the product inventory traversal REST client using JAX-RS running over Rakuten IaaS. Creating daily updates of a 30.000.000+ product inventory in UK, Spain, Taiwan, Malaysia, Thailand, Germany, Austria, Singapore.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2013 - 2014
+
+									.resume-btn
+										a(href="#work9",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title Scaffolding - Java Back-End & Front End / Netcentric -  Munich
+
+										#work9.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Implementing a state-machine based configurable scaffolding extension in the Adobe CQ framework to support generating new UI reports and forms dynamically in the front-end.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2013 - 2014
+
+									.resume-btn
+										a(href="#work10",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title JapanCuccok Image Carousel - Javascript / @Home
+
+										#work10.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Designing, analysing, implementing and testing a configurable image carousel written in Javascript. Implementing a state-machine based event-handler engine to make the carousel interactive.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2013 - 2014
+
+									.resume-btn
+										a(href="#work11",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title JapanCuccok - Java Back-End & Front End / @Home
+
+										#work11.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Designing, analysing, implementing and testing a web-shop administration application and public facing front-end application in Apache Wicket running on top of the Google App Engine.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2008 - 2013
+
+									.resume-btn
+										a(href="#work12",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title CEM on Demand - Common Components / NSN - Budapest
+
+										#work12.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Tutoring, mentoring multi-site members, liaisng with different development sites around the globe. Designing, analysing and testing UI components using JQuery, Highcharts, Apache Struts, Java Portlets, etc.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2008 - 2013
+
+									.resume-btn
+										a(href="#work13",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title SADM - Bulk Export / NSN - Budapest
+
+										#work13.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Designing, implementing and testing the bulk user export feature in SADM. Extending the DAO layer and API with new methods, implementing the new feature in Oracle 11g PL/SQL.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2008 - 2013
+
+									.resume-btn
+										a(href="#work14",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title SADM - Port-out & Ban / NSN - Budapest
+
+										#work14.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Port out/banning feature in SADM: designing, analysing, implementing, automating and testing the port out / ban feature which gave the mobile operators an important measure to tighten their security by blacklisting specific phone IMEIs / IMSIs in their network. Creating new UI views in JSF, new models in Java, extending the DAO layer / API with new methods according to the new logic.
+
+								.resume-item
+									span.resume-item-before
+									.resume-year
+										span 2008 - 2013
+
+									.resume-btn
+										a(href="#work15",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title SADM - Java Front End / NSN - Budapest
+
+										#work15.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Implementing new pages in the SADM administration application using JSF 1.2
+
+								.resume-item
+									.resume-year
+										span 2008
+
+									.resume-btn
+										a(href="#work16",data-toggle="collapse",data-parent="#work").collapsed
+
+									.panel
+										.panel-heading
+											.panel-title
+												h4.resume-title AEGON Insurance Hungary - Perl Front End / Hungary Network Rt. - Budapest
+
+										#work16.panel-collapse.collapse
+											.panel-body.text-grey.text-left
+												p.
+													Implementing modifications on the AEGON website using Perl & Html::Mason.
+
+	#ptsection-four.portfolio-grid.portfolio-effect-shrink.pt-section(data-name="Portfolio").max-width.max-height: .container
+		.partial.partial-wrapper
+			.partial-content.text-center
+				h2.partial-title Portfolio
+
+				p.partial-subtitle The following is a sample selection of some of the websites I worked on during the years
+
+				span.divider.center
+
+		.col-md-6.figurebox
+			figure
+				img(src="../../images/landing-page-ubs.png", alt="Blog 01")
+				figcaption
+					span.portfolio-item-info
+						h4.sub-heading UBS AG
+						p Public website of the Swiss banking giant. Front-end and back-end are both written in Adobe CQ5 and Java
+						a(href="https://www.ubs.com",target="_blank").btn.btn-primary Visit Website
+
+		.col-md-6.figurebox
+			figure
+				img(src="../../images/landing-page-anagift.png", alt="Blog 01")
+				figcaption
+					span.portfolio-item-info
+						h4.sub-heading ANA Gift
+						p Public facing web-application and backend service for the Japanese airline subsidiary written in Ruby on Rails and relying on the Spree framework
+						a(href="https://www.anagift.com/",target="_blank").btn.btn-primary Visit Website
+
+		.col-md-6.figurebox
+			figure
+				img(src="../../images/landing-page-aegon.png", alt="Blog 01")
+				figcaption
+					span.portfolio-item-info
+						h4.sub-heading Aegon N.V.
+						p The Hungarian page of the Dutch insurance company. Public pages and backend are both written in Html::Mason and Perl
+						a(href="https://www.aegon.hu/",target="_blank").btn.btn-primary Visit Website
+
+		.col-md-6.figurebox
+			figure
+				img(src="../../images/landing-page-japancuccok.png", alt="Blog 01")
+				figcaption
+					span.portfolio-item-info
+						h4.sub-heading Japancuccok
+						p Public facing web-shop and administration back-end application written in Apache Wicket & Java
+						a(href="http://fogettijapancuccok.appspot.com/",target="_blank").btn.btn-primary Visit Website
+
+	#ptsection-five.pt-section(data-name="Location",style="background-color:#F1EEEE;width:100%;").max-width: .skin
+		div#gm-panel
+		div#google-map.bigmap
+
+	div#back-top
+		a(href="#top")
+block js
+	script(src="https://maps.google.com/maps/api/js?sensor=false",type="text/javascript")
+	script(src="/js/site/jquery.backstretch.min.js")
+	script(src="/js/site/jquery.progresstracker.min.js")
+	script(src="/js/site/jquery.inview.min.js")
+	script(src="/js/site/index.js")

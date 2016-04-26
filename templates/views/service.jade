@@ -1,0 +1,58 @@
+extends ../layouts/default
+
+block content
+	#preloader
+		#status
+			.status-mes
+				h4 Fogetti
+
+	div#service-section-one.container.slick-slider.pt-section.max-height(data-name="Slick")
+		.slide
+			.col-sm-offset-1.col-sm-4.col-md-offset-1.col-md-4.animated.bounceInUp
+					img(src="../../images/elasticsearch-kibana-logstash.svg").img-responsive
+			.col-md-6.partial.partial-wrapper.animated.fadeInDown
+				.partial-content.text-center
+					h2.partial-title.animated.slideInLeft Log Processing & Data Aggregation
+
+					p.partial-subtitle Processing data from any source, normalizing to any schema, supporting data visualization and business reporting. Using cutting edge technologies like Elasticsearch, Logstash, Fluentd and Kibana.
+
+					span.divider.center
+
+		.slide
+			.col-sm-offset-1.col-sm-4.col-md-offset-1.col-md-4.animated.bounceInUp
+					img(src="../../images/storm-and-lucene.svg").img-responsive
+			.col-md-6.partial.partial-wrapper.animated.fadeInDown
+				.partial-content.text-center
+					h2.partial-title Streaming Analytics and Data Modeling
+
+					p.partial-subtitle Analyzing, designing, implementing, testing and automating highly available distributed analytics applications using cutting edge technologies like Apache Storm and Apache Lucene.
+
+					span.divider.center
+
+		.slide
+			.col-sm-offset-1.col-sm-4.col-md-offset-1.col-md-4.animated.bounceInUp
+					img(src="../../images/java-and-javascript.svg").img-responsive
+			.col-md-6.partial.partial-wrapper.animated.fadeInDown
+				.partial-content.text-center
+					h2.partial-title Application Development
+
+					p.partial-subtitle Analyzing, designing, implementing, testing and automating new or existing applications in Java, Javascript, Node.js, Ruby on Rails or Android. Delivering reliable code using TDD, BDD and engaging the customers.
+
+					span.divider.center
+
+		.slide
+			.col-sm-offset-1.col-sm-4.col-md-offset-1.col-md-4.animated.bounceInUp
+					img(src="../../images/css3-and-html5.svg").img-responsive
+			.col-md-6.partial.partial-wrapper.animated.fadeInDown
+				.partial-content.text-center
+					h2.partial-title Front-End & Back-End
+
+					p.partial-subtitle Designing, developing, maintaining and automating single page web-applications, large-scale distributed user facing websites, web-administration interfaces, highly available, horizontally scaling web-applications in finance, e-commerce, media and advertising and telecommunications in small scale and large scale also. Using the latest cutting edge web stack.
+
+					span.divider.center
+
+	div#back-top
+		a(href="#top")
+block js
+	script(src="/js/slick/slick.min.js")
+	script(src="/js/site/service.js")

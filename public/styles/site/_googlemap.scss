@@ -1,0 +1,47 @@
+/*------------------------------------------------------------------
+[Google Map]
+*/
+
+#google-map {
+  width: 100%;
+  img {  max-width: none;  }
+}
+.bigmap {  height: 400px !important;  }
+
+
+/* Google map Slide-out */
+#gm-panel {
+  width: 100%;
+  background: #eeeeee;
+  text-align: center;
+  /*z-index: 9;*/
+  bottom: 300px;
+  //display:none;
+}
+a.gm-toggle-link {  cursor: pointer;  }
+.gm-toggle  {
+  margin: 0 auto;
+  padding: 24px 0;
+  text-align: center;
+  //background: $color02;
+  width: 100%;
+  i {
+    color: darkgray;
+    font-size: 32px;
+    line-height: 32px;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+    -ms-transition: all 0.35s ease-in-out;
+  }
+  transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -webkit-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  :hover {
+    background: #F1EEEE;
+    i {color: darkgray;}
+  }
+}

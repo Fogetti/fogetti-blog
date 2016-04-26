@@ -1,0 +1,243 @@
+#header {
+	position: absolute;
+  padding-top: 15px;
+	width: 100%;
+	z-index: $zindex-navbar;
+}
+
+body {
+    background-size: cover;
+}
+
+#footer {
+	margin-top: 30px;
+	padding-top: 30px;
+	color: $gray-lighter;
+  text-align: center;
+}
+
+#preloader {
+    background: $body-bg;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 9999;
+}
+
+#status, .status-mes {
+    background-image: url(../../images/preloader.gif);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 200px;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+}
+
+.status-mes {
+    background: none;
+    left: 0;
+    margin: 0;
+    text-align: center;
+    top: 65%;
+}
+
+.status-mes h4 {
+    color: $gray-lighter;
+    margin-top: 30px;
+}
+
+h4 {
+    font-size: 16px;
+    margin: 5px 0 10px;
+}
+
+.blog .post img {
+  max-width:160px;
+  max-height:160px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  1.1. TEXT COLOR
+/*---------------------------------------------------------------------*/
+.text-grey {
+  color: #a1a1a1;
+}
+
+.colored-text {
+  color: #c80a48;
+}
+
+/*---------------------------------------------------------------------*/
+/*  1.2. HEADING
+/*---------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.1. DIVIDER
+/*---------------------------------------------------------------------*/
+span.divider {
+  display: block;
+  margin: 35px 0px;
+  width: 150px;
+  height: 2px;
+  background-color: #c80a48;
+}
+
+span.divider.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.2. MISC
+/*---------------------------------------------------------------------*/
+.gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.padding {
+	padding-top:110px;	
+}
+
+.thankyou {
+	font-size: 10px;
+}
+
+.article {
+  padding: 30px;
+	background-color: rgba(78, 93, 108, 0.3);
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.3. FONT AWESOME
+/*---------------------------------------------------------------------*/
+.fa {
+	color: darkgray;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.4. PROGRESSTRACK
+/*---------------------------------------------------------------------*/
+.pt-section.max-width {
+  width: 100%;
+}
+
+.pt-section.max-height {
+  min-height: 100vh;
+}
+
+#ptsection-one {
+  padding-top: 20%;
+  text-align: center;
+}
+
+#ptsection-one.no-padding {
+  padding-top: 0;
+  text-align: center;
+}
+
+@media screen and (max-width: 420px) {
+  #ptsection-one {
+    padding-top: 40%;
+  }
+}
+
+#ptsection-one .col-md-8 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 420px) {
+  #ptsection-one msg {
+    font-size: 45px;
+  }
+}
+
+#ptsection-one h3 {
+  color: #a1a1a1;
+  font-style: italic;
+}
+
+#ptsection-one icons {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  left: 0;
+}
+
+#ptsection-one icons img {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 420px) {
+  #ptsection-one icons img {
+    max-width: 48px;
+  }
+}
+
+#backstretch-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    background-image: linear-gradient(0deg, rgba(23, 23, 23, 1) 0, rgba(23, 23, 23, 0.02) 70%, rgba(23, 23, 23, 0) 100%);
+}
+
+#ptsection-one .fadeInUp {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@media screen and (max-width: 420px) {
+  #ptsection-one .fadeInUp {
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
+  }
+}
+
+/*********************************************
+        -   SETTINGS FOR FONTS -
+**********************************************/
+.tp-caption.large_bold_white, .large_bold_white {
+    background-color: transparent;
+    border-color: #ffd658;
+    border-style: none;
+    border-width: 0;
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 60px;
+    text-decoration: none;
+}
+.tp-caption.medium_light_white, .medium_light_white {
+    background-color: transparent;
+    border-color: #ffd658;
+    border-style: none;
+    border-width: 0;
+    color: #fff;
+    font-family: "Lato";
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    padding: 0;
+    text-decoration: none;
+}
