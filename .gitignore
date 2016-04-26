@@ -2,3 +2,5 @@
 node_modules
 *.env
 /.project
+public/styles/site.css
+public/images/post/*
