@@ -6236,7 +6236,8 @@ li[data-type] {
   background-size: 24px 24px;
   background-position-x: calc((100% - 24px) / 2 + 15px);
   background-position-y: 10px;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 50% 30%; }
 
 @media (max-width: 767px) {
   li[data-type] {

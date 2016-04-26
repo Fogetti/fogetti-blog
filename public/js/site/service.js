@@ -27,11 +27,15 @@
 
         $('.slick-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
             $(".slick-current").removeClass('animated fadeInDown bounceInUp slideInLeft');
+            // Restart animation in Safari
+            $(".slick-current")[0].style.webkitAnimationName = 'animated';
             $(".slick-current").addClass('animated fadeOutDown');
         });
 
         $('.slick-slider').on('afterChange', function(event, slick, currentSlide, nextSlide) {
             $(".slick-current").removeClass('hidden animated fadeOutDown');
+            // Restart animation in Safari
+            $(".slick-current")[0].style.webkitAnimationName = 'animated';
             $(".slick-current").addClass('animated fadeInDown');
             $(".slick-current+div").addClass('hidden');
         });
