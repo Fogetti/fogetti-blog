@@ -30,15 +30,10 @@ html
 		meta(name="msapplication-TileImage", content="/images/favicon/ms-icon-144x144.png")
 		meta(name="theme-color", content="#ffffff")
 
-		//- Google Fonts
-		link(href='https://fonts.googleapis.com/css?family=Bitter:400,700,400italic',rel='stylesheet',type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Lato:300',rel='stylesheet',type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800',rel='stylesheet',type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Lato:400,700',rel='stylesheet',type='text/css')
-		link(href='https://fonts.googleapis.com/css?family=Raleway:400,700',rel='stylesheet',type='text/css')
-	
 		//- Customise the stylesheet for your site by editing /public/styles/site.sass
-		link(href="/styles/site.css", rel="stylesheet")
+		//- Critical CSS contains the styles above the fold which is
+		//- the most important part of the page while rendering
+		link(href="/styles/critical.css", rel="stylesheet")
 		
 		//- This file provides the default styling for the KeystoneJS Content Editor
 		if user && user.canAccessKeystone
@@ -107,6 +102,13 @@ html
 			//- The video block should contain the custom background video content
 			block video
 
+			//- The preloader block shows the preloader animation while linked resources are loaded
+			block preloader
+				#preloader
+					#status
+						.status-mes
+							h4 Fogetti
+
 			//- The content block should contain the body of your template's content
 			block content
 
@@ -145,6 +147,9 @@ html
 		//- you can upgrade to 2.1.4 (also bundled) for better performance.
 		script(src='/js/jquery/jquery-2.1.4.min.js')
 
+		//- Preloader GIF which hides the unstyled DOM elements until all the styling is ready
+		script(src="/js/site/preloader.js")
+
 		//- Customise which Bootstrap javascript files are served by including
 		//- them specifically here, instead of bootstrap-3.3.5.min.js
 		script(src='/js/bootstrap/bootstrap-3.3.5.min.js')
@@ -155,7 +160,39 @@ html
 			script(src='/keystone/js/content/editor.js')
 
 		//- Add scripts that are globally required by your site here.
+		//- Load CSS will load the given stylesheet asynchronously so that rendering can be faster
+		script.
+			/*-------------------------------------------------------------------
+			* Modified for brevity from https://github.com/filamentgroup/loadCSS
+			* loadCSS: load a CSS file asynchronously.
+			* [c]2014 @scottjehl, Filament Group, Inc.
+			* Licensed MIT
+			*------------------------------------------------------------------*/
+			function loadCSS(href){
+				var ss = window.document.createElement('link'),
+				ref = window.document.getElementsByTagName('head')[0];
+
+				ss.rel = 'stylesheet';
+				ss.href = href;
+
+				// temporarily, set media to something non-matching to ensure it'll
+				// fetch without blocking render
+				ss.media = 'only x';
+
+				ref.parentNode.insertBefore(ss, ref);
+
+				setTimeout( function(){
+					// set media back to `all` so that the stylesheet applies once it loads
+					ss.media = 'all';
+				},0);
+			}
+			// We load non-critical part asynchronously
+			loadCSS('/styles/non-critical.css');
+		//- In case the user agent doesn't use javascript we load the stylesheet synchronously
+		noscript.
+			#[link(href="/styles/non-critical.css", rel="stylesheet")]
+		//- Load a video background overlay in specific pages
 		script(src='/js/site/video.js')
-		
+
 		//- Include template-specific javascript files by extending the js block
 		block js

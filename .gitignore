@@ -3,4 +3,6 @@ node_modules
 *.env
 /.project
 public/styles/site.css
+public/styles/critical.css
+public/styles/non-critical.css
 public/images/post/*

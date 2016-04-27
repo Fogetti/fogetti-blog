@@ -1,0 +1,35 @@
+/*==========================================================================
+*   Print styles above the fold.
+*==========================================================================*/
+@media print {
+    * {
+        background-color: transparent !important;
+        color: rgb(0, 0, 0) !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        background-position: initial initial !important;
+        background-repeat: initial initial !important;
+    }
+    a {
+        text-decoration: underline;
+    }
+    a[href]::after {
+        content: ' (', attr(href), ')';
+    }
+    img {
+        page-break-inside: avoid;
+    }
+    img {
+        max-width: 100% !important;
+    }
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+    h3 {
+        page-break-after: avoid;
+    }
+    .navbar {
+        display: none;
+    }
+}

@@ -1,0 +1,80 @@
+#footer {
+	margin-top: 30px;
+	padding-top: 30px;
+	color: $gray-lighter;
+  text-align: center;
+}
+
+.blog .post img {
+  max-width:160px;
+  max-height:160px;
+}
+
+/*---------------------------------------------------------------------*/
+/*  1.1. TEXT COLOR
+/*---------------------------------------------------------------------*/
+.text-grey {
+  color: #a1a1a1;
+}
+
+.colored-text {
+  color: #c80a48;
+}
+
+/*---------------------------------------------------------------------*/
+/*  1.2. HEADING
+/*---------------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.1. DIVIDER
+/*---------------------------------------------------------------------*/
+span.divider {
+  display: block;
+  margin: 35px 0px;
+  width: 150px;
+  height: 2px;
+  background-color: #c80a48;
+}
+
+span.divider.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.2. MISC
+/*---------------------------------------------------------------------*/
+.gallery-image img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.padding {
+	padding-top:110px;	
+}
+
+.thankyou {
+	font-size: 10px;
+}
+
+.article {
+  padding: 30px;
+	background-color: rgba(78, 93, 108, 0.3);
+}
+
+/*---------------------------------------------------------------------*/
+/*  2.3. FONT AWESOME
+/*---------------------------------------------------------------------*/
+.fa {
+	color: darkgray;
+}
