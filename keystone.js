@@ -19,7 +19,7 @@ keystone.init({
 		'public'
 	],
 	'static options': {
-		'maxAge': '1d'
+		'maxAge': '7d'
 	},
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
