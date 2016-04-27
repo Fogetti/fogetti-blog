@@ -4,13 +4,8 @@
     $(document).ready(function() {
 
         /*-------------------------------------------------------------------*/
-        /*  Preloader
+        /*  Slick slider
         /*-------------------------------------------------------------------*/
-        $(window).load(function() {
-            $('#status').fadeOut();
-            $('#preloader').fadeOut('fast');
-        });
-
         $('.slick-slider').on('init', function(event, slick, currentSlide, nextSlide) {
             $(".slick-current+div").addClass('hidden');
         });
