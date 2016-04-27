@@ -29,8 +29,8 @@ keystone.init({
 	'admin name last': process.env.ADMIN_NAME_LAST,
 	'admin name email': process.env.ADMIN_NAME_EMAIL,
 	'admin name password': process.env.ADMIN_NAME_PASSWORD,
-	'post image upload path': process.env.POST_IMAGE_UPLOAD_PATH
-
+	'post image upload path': process.env.POST_IMAGE_UPLOAD_PATH,
+	'ssl ca': process.env.SSL_CA
 });
 
 // Load your project's Models
