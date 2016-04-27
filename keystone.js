@@ -15,7 +15,12 @@ keystone.init({
 	'brand': 'Fogetti Blog',
 	
 	'sass': 'public',
-	'static': 'public',
+	'static': [
+		'public'
+	],
+	'static options': {
+		'maxAge': '1d'
+	},
 	'favicon': 'public/favicon.ico',
 	'views': 'templates/views',
 	'view engine': 'jade',
