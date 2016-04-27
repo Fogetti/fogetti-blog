@@ -157,7 +157,7 @@ html
 		//- The KeystoneJS Content Editor provides support for ks-editable data attributes,
 		//- which generate links to edit content for users who can access Keystone
 		if user && user.canAccessKeystone
-			script(src='/keystone/js/content/editor.js')
+			script(src='/keystone/js/content/editor.js', async)
 
 		//- Add scripts that are globally required by your site here.
 		//- Load CSS will load the given stylesheet asynchronously so that rendering can be faster
@@ -192,7 +192,7 @@ html
 		noscript.
 			#[link(href="/styles/non-critical.css", rel="stylesheet")]
 		//- Load a video background overlay in specific pages
-		script(src='/js/site/video.js')
+		script(src='/js/site/video.js', async)
 
 		//- Include template-specific javascript files by extending the js block
 		block js
