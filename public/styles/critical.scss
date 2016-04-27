@@ -1,2 +1,7 @@
-$critical: true;
-@import "site";
+// Above the fold is the most critical part of the page
+@import "themes/variables";
+@import "site/print";
+@import "site/grid";
+@import "site/navbar";
+@import "site/progresstracker-critical";
+@import "site/default-critical";	
