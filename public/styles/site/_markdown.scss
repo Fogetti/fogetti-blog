@@ -1,0 +1,279 @@
+#article-body {
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $gray-lighter;
+}
+
+@media screen and (min-width:768px) {
+    #article-body {
+        padding-bottom: 60px
+    }
+}
+
+#article-body li {
+    font-size: 15px;
+}
+
+article header h1,
+article header h2,
+article header h3,
+article header h4,
+article header h5,
+article header h6,
+article header .h1,
+article header .h2,
+article header .h3,
+article header .h4,
+article header .h5,
+article header .h6 {
+    word-wrap: break-word;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#article-body h1,
+#article-body h2,
+#article-body h3,
+#article-body h4,
+#article-body h5,
+#article-body h6,
+#article-body .h1,
+#article-body .h2,
+#article-body .h3,
+#article-body .h4,
+#article-body .h5,
+#article-body .h6 {
+    word-wrap: break-word;
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#article-body h1+h1,
+#article-body h2+h1,
+#article-body h3+h1,
+#article-body h4+h1,
+#article-body h5+h1,
+#article-body h6+h1,
+#article-body .h1+h1,
+#article-body .h2+h1,
+#article-body .h3+h1,
+#article-body .h4+h1,
+#article-body .h5+h1,
+#article-body .h6+h1,
+#article-body h1+h2,
+#article-body h2+h2,
+#article-body h3+h2,
+#article-body h4+h2,
+#article-body h5+h2,
+#article-body h6+h2,
+#article-body .h1+h2,
+#article-body .h2+h2,
+#article-body .h3+h2,
+#article-body .h4+h2,
+#article-body .h5+h2,
+#article-body .h6+h2,
+#article-body h1+h3,
+#article-body h2+h3,
+#article-body h3+h3,
+#article-body h4+h3,
+#article-body h5+h3,
+#article-body h6+h3,
+#article-body .h1+h3,
+#article-body .h2+h3,
+#article-body .h3+h3,
+#article-body .h4+h3,
+#article-body .h5+h3,
+#article-body .h6+h3,
+#article-body h1+h4,
+#article-body h2+h4,
+#article-body h3+h4,
+#article-body h4+h4,
+#article-body h5+h4,
+#article-body h6+h4,
+#article-body .h1+h4,
+#article-body .h2+h4,
+#article-body .h3+h4,
+#article-body .h4+h4,
+#article-body .h5+h4,
+#article-body .h6+h4,
+#article-body h1+h5,
+#article-body h2+h5,
+#article-body h3+h5,
+#article-body h4+h5,
+#article-body h5+h5,
+#article-body h6+h5,
+#article-body .h1+h5,
+#article-body .h2+h5,
+#article-body .h3+h5,
+#article-body .h4+h5,
+#article-body .h5+h5,
+#article-body .h6+h5,
+#article-body h1+h6,
+#article-body h2+h6,
+#article-body h3+h6,
+#article-body h4+h6,
+#article-body h5+h6,
+#article-body h6+h6,
+#article-body .h1+h6,
+#article-body .h2+h6,
+#article-body .h3+h6,
+#article-body .h4+h6,
+#article-body .h5+h6,
+#article-body .h6+h6,
+#article-body h1+.h1,
+#article-body h2+.h1,
+#article-body h3+.h1,
+#article-body h4+.h1,
+#article-body h5+.h1,
+#article-body h6+.h1,
+#article-body .h1+.h1,
+#article-body .h2+.h1,
+#article-body .h3+.h1,
+#article-body .h4+.h1,
+#article-body .h5+.h1,
+#article-body .h6+.h1,
+#article-body h1+.h2,
+#article-body h2+.h2,
+#article-body h3+.h2,
+#article-body h4+.h2,
+#article-body h5+.h2,
+#article-body h6+.h2,
+#article-body .h1+.h2,
+#article-body .h2+.h2,
+#article-body .h3+.h2,
+#article-body .h4+.h2,
+#article-body .h5+.h2,
+#article-body .h6+.h2,
+#article-body h1+.h3,
+#article-body h2+.h3,
+#article-body h3+.h3,
+#article-body h4+.h3,
+#article-body h5+.h3,
+#article-body h6+.h3,
+#article-body .h1+.h3,
+#article-body .h2+.h3,
+#article-body .h3+.h3,
+#article-body .h4+.h3,
+#article-body .h5+.h3,
+#article-body .h6+.h3,
+#article-body h1+.h4,
+#article-body h2+.h4,
+#article-body h3+.h4,
+#article-body h4+.h4,
+#article-body h5+.h4,
+#article-body h6+.h4,
+#article-body .h1+.h4,
+#article-body .h2+.h4,
+#article-body .h3+.h4,
+#article-body .h4+.h4,
+#article-body .h5+.h4,
+#article-body .h6+.h4,
+#article-body h1+.h5,
+#article-body h2+.h5,
+#article-body h3+.h5,
+#article-body h4+.h5,
+#article-body h5+.h5,
+#article-body h6+.h5,
+#article-body .h1+.h5,
+#article-body .h2+.h5,
+#article-body .h3+.h5,
+#article-body .h4+.h5,
+#article-body .h5+.h5,
+#article-body .h6+.h5,
+#article-body h1+.h6,
+#article-body h2+.h6,
+#article-body h3+.h6,
+#article-body h4+.h6,
+#article-body h5+.h6,
+#article-body h6+.h6,
+#article-body .h1+.h6,
+#article-body .h2+.h6,
+#article-body .h3+.h6,
+#article-body .h4+.h6,
+#article-body .h5+.h6,
+#article-body .h6+.h6 {
+    margin-top: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#article-body h1,
+#article-body .h1 {
+    font-size: 38px;
+    font-size: 2.375rem
+}
+
+#article-body h2,
+#article-body .h2 {
+    font-size: 33px;
+    font-size: 2.0625rem
+}
+
+#article-body h3,
+#article-body .h3 {
+    margin-top: 40px;
+    margin-top: 2.5rem;
+    font-size: 28px;
+    font-size: 1.75rem
+}
+
+#article-body h4,
+#article-body .h4 {
+    font-size: 23px;
+    font-size: 1.4375rem
+}
+
+#article-body h5,
+#article-body .h5 {
+    font-size: 20px;
+    font-size: 1.25rem
+}
+
+#article-body h6,
+#article-body .h6 {
+    font-size: 18px;
+    font-size: 1.125rem
+}
+
+#article-body li ul,
+#article-body li ol {
+    margin-top: 10px
+}
+
+#article-body li ul li,
+#article-body li ol li {
+    margin-top: 5px
+}
+
+#article-body li img,
+#article-body li blockquote {
+    margin: 20px 0
+}
+
+#article-body li ul+p,
+#article-body li ol+p {
+    margin-top: 20px
+}
+
+#article-body li+li {
+    margin-top: 10px
+}
+
+#article-body code {
+    font-size: 14px;
+    padding: 0 4px;
+    word-wrap: break-word;
+}
+
+#article-body img {
+    display: block;
+    max-width: 100%;
+    height: auto
+}
+
+#article-body blockquote {
+    font-size: inherit;
+}

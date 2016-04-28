@@ -18,8 +18,8 @@ mixin post(post)
 				| by #{post.author.name.first}
 		if post.image.exists
 			img(src='../../images/post/' + post.image.filename).img-responsive.pull-right
-		p!= post.content.brief
-		if post.content.extended
+		p!= post.content.brief.html
+		if post.content.extended.html
 			p.read-more: a(href='/blog/post/' + post.slug) Read more...
 
 block intro

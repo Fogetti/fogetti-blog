@@ -4,7 +4,7 @@ block intro
 	.padding
 
 block content
-	.container: .row: .col-sm-10.col-sm-offset-1.col-md-8.col-md-offset-2.article
+	.container: .row: .col-sm-12.col-md-12.article
 		article
 			p: a(href='/blog') &larr; back to the blog
 			hr
@@ -28,8 +28,9 @@ block content
 							| by #{data.post.author.name.first}
 				.post
 					if data.post.image.exists
-						.image-wrap: img(src='../../images/post/' + data.post.image.filename).img-responsive
-					!= data.post.content.full
+						.image-wrap
+							.image-center: img(src='../../images/post/' + data.post.image.filename).img-responsive
+					div#article-body!= data.post.content.full.html
 		div#disqus_thread
 		script.
 			var disqus_config = function () {
