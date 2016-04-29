@@ -277,3 +277,133 @@ article header .h6 {
 #article-body blockquote {
     font-size: inherit;
 }
+
+#article-body .note {
+    padding: 15px;
+    background-color: #C9E5F9;
+    border-left: 4px solid #6AB7EA;
+    color: #171717;
+}
+
+#article-body .note:before {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    font-size: 14px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000
+}
+
+#article-body .note:before small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999
+}
+
+#article-body .note:before+.lead {
+    padding-top: 10px
+}
+
+#article-body .note:before {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+#article-body .note * {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+#article-body .note:before {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    font-size: 14px;
+    font-size: 19px;
+    font-weight: 400
+}
+
+#article-body .note:before small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999
+}
+
+#article-body .note:before+.lead {
+    padding-top: 10px
+}
+
+#article-body .note:before {
+    content: "Note"
+}
+
+#article-body .note strong {
+    font-weight: bold
+}
+
+#article-body .caution {
+    padding: 15px;
+    background-color: #fdf3f2;
+    border-left: 4px solid #f8c9c4;
+    color: #171717;
+}
+
+#article-body .caution:before {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    font-size: 14px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #000
+}
+
+#article-body .caution:before small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999
+}
+
+#article-body .caution:before+.lead {
+    padding-top: 10px
+}
+
+#article-body .caution:before {
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+#article-body .caution * {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5
+}
+
+#article-body .caution:before {
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.1;
+    font-size: 14px;
+    font-size: 19px;
+    font-weight: 400
+}
+
+#article-body .caution:before small {
+    font-weight: normal;
+    line-height: 1;
+    color: #999
+}
+
+#article-body .caution:before+.lead {
+    padding-top: 10px
+}
+
+#article-body .caution:before {
+    content: "Caution"
+}
+
+#article-body .caution strong {
+    font-weight: bold
+}
