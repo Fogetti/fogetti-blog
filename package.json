@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "dependencies": {
-    "keystone": "git+https://github.com/keystonejs/keystone.git",
+    "keystone": "git+https://github.com/Fogetti/keystone.git",
     "async": "^1.5.0",
     "underscore": "^1.8.3",
     "node-sass": "^3.3.2",
