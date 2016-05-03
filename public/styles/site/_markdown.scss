@@ -15,6 +15,11 @@
     font-size: 15px;
 }
 
+#article-body .note a,
+#article-body .caution a {
+    font-size: 15px;
+}
+
 article header h1,
 article header h2,
 article header h3,
@@ -406,4 +411,90 @@ article header .h6 {
 
 #article-body .caution strong {
     font-weight: bold
+}
+
+/*
+* Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-license.org/
+*/
+
+#article-body pre {
+    padding: 0;
+}
+
+#article-body pre code {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #23241f;
+}
+
+#article-body pre code,
+#article-body .hljs-tag,
+#article-body .hljs-subst {
+  color: #f8f8f2;
+}
+
+#article-body .hljs-strong,
+#article-body .hljs-emphasis {
+  color: #a8a8a2;
+}
+
+#article-body .hljs-bullet,
+#article-body .hljs-quote,
+#article-body .hljs-number,
+#article-body .hljs-regexp,
+#article-body .hljs-literal,
+#article-body .hljs-link {
+  color: #ae81ff;
+}
+
+#article-body .hljs-code,
+#article-body .hljs-title,
+#article-body .hljs-section,
+#article-body .hljs-selector-class {
+  color: #a6e22e;
+}
+
+#article-body .hljs-strong {
+  font-weight: bold;
+}
+
+#article-body .hljs-emphasis {
+  font-style: italic;
+}
+
+#article-body .hljs-keyword,
+#article-body .hljs-selector-tag,
+#article-body .hljs-name,
+#article-body .hljs-attr {
+  color: #f92672;
+}
+
+#article-body .hljs-symbol,
+#article-body .hljs-attribute {
+  color: #66d9ef;
+}
+
+#article-body .hljs-params,
+#article-body .hljs-class .hljs-title {
+  color: #f8f8f2;
+}
+
+#article-body .hljs-string,
+#article-body .hljs-type,
+#article-body .hljs-built_in,
+#article-body .hljs-builtin-name,
+#article-body .hljs-selector-id,
+#article-body .hljs-selector-attr,
+#article-body .hljs-selector-pseudo,
+#article-body .hljs-addition,
+#article-body .hljs-variable,
+#article-body .hljs-template-variable {
+  color: #e6db74;
+}
+
+#article-body .hljs-comment,
+#article-body .hljs-deletion,
+#article-body .hljs-meta {
+  color: #75715e;
 }

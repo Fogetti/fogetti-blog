@@ -8,7 +8,8 @@
     "underscore": "^1.8.3",
     "node-sass": "^3.3.2",
     "node-sass-middleware": "^0.9.7", 
-    "dotenv": "^1.1.0"
+    "dotenv": "^1.1.0",
+    "highlight.js": "*"
   },
   "devDependencies": {
     "gulp": "^3.7.0",

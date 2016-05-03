@@ -27,8 +27,24 @@ Post.add({
 		}
 	},
 	content: {
-		brief: { type: Types.Markdown , wysiwyg: true, height: 150 },
-		extended: { type: Types.Markdown, wysiwyg: true, height: 400 }
+		brief: {
+			type: Types.Markdown,
+			markedOptions: {
+				gfm: true,
+				highlight: highlighter()
+			},
+			wysiwyg: true,
+			height: 150
+		},
+		extended: {
+			type: Types.Markdown,
+			markedOptions: {
+				gfm: true,
+				highlight: highlighter()
+			},
+			wysiwyg: true,
+			height: 400
+		}
 	},
 	categories: { type: Types.Relationship, ref: 'PostCategory', many: true }
 });
@@ -39,3 +55,10 @@ Post.schema.virtual('content.full').get(function() {
 
 Post.defaultColumns = 'title, state|20%, author|20%, publishedDate|20%';
 Post.register();
+
+function highlighter() {
+	var hljs = require('highlight.js');
+	return function(code, lang) {
+		return hljs.highlightAuto(code).value;
+	};
+};
