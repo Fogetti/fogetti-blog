@@ -9,7 +9,8 @@
     "node-sass": "^3.3.2",
     "node-sass-middleware": "^0.9.7", 
     "dotenv": "^1.1.0",
-    "highlight.js": "*"
+    "highlight.js": "*",
+    "keystone-express-sitemap": "*"
   },
   "devDependencies": {
     "gulp": "^3.7.0",
