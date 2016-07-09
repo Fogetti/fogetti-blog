@@ -32,6 +32,18 @@ block content
 							.image-center: img(src='../../images/post/' + data.post.image.filename).img-responsive
 					div#article-body!= data.post.content.full.html
 		div#disqus_thread
+		script(type='text/x-mathjax-config').
+			MathJax.Hub.Config({
+				extensions: ["tex2jax.js"],
+				jax: ["input/TeX","output/HTML-CSS"],
+				tex2jax: {
+					inlineMath: [["$","$"],["\\\(","\\)"]],
+					displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+					processEscapes: true
+				},
+				"HTML-CSS": { availableFonts: ["TeX"] }
+			});
+		script(type='text/javascript', src='https://cdn.mathjax.org/mathjax/latest/MathJax.js')
 		script.
 			var disqus_config = function () {
 				this.page.url = '#{req.protocol}://#{req.hostname}:#{port}#{req.originalUrl}';
