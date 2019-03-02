@@ -1,0 +1,1 @@
+The project assumes to be executed with Node.js v6.9.2
