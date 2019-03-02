@@ -136,4 +136,37 @@
         }, 600);
     };
 
+    // Image preload
+    const preloadImage = image => {
+      return new Promise((resolve, reject) => {
+        image.src = image.dataset.src;
+        image.onload = resolve;
+        image.onerror = reject;
+      });
+    };
+    // Get all of the images that are marked up to lazy load
+    const images = document.querySelectorAll('.preload');
+    const config = {
+        // If the image gets within 50px in the Y axis, start the download.
+        rootMargin: '200px 0px',
+        threshold: 0.01
+    };
+
+    // The observer for the images on the page
+    let observer = new IntersectionObserver(onIntersection, config);
+    images.forEach(image => {
+        observer.observe(image);
+    });
+    function onIntersection(entries) {
+        // Loop through the entries
+        entries.forEach(entry => {
+            // Are we in viewport?
+            if (entry.intersectionRatio > 0) {
+                // Stop watching and load the image
+                observer.unobserve(entry.target);
+                preloadImage(entry.target);
+            }
+        });
+    }
+
 })(jQuery);
